@@ -1,7 +1,7 @@
-
 ## Installation
 
 Initiate Sequelize
+
 ```bash
 with cli
     pnpm add sequelize
@@ -50,12 +50,12 @@ module.exports = {
   }
 };
 
-pnpm sequelize-cli db:seed:all         
+pnpm sequelize-cli db:seed:all
 note : ทําเเยกได้ เเล้วรันคําสั่งนี้เพื่อ ทําการ seed
 
 ConnectDB And Start Crud
 
-  models/index.js 
+  models/index.js
   ถูกออกแบบมาให้ โหลดทุก Model อัตโนมัติ
 
   app.js
@@ -75,7 +75,7 @@ app.listen(3001, async () => {
 
 Without cli
  pnpm add sequelize
- 
+
  database.js
  const sequelize = new Sequelize(process.env.DATABASE_URL);
 
@@ -137,27 +137,27 @@ app.listen(3000, async () => {
 });
 ```
 
-
-    
 ## Documentation
 
 [Documentation](https://sequelize.org/docs/v6/getting-started/)
-
-
-
-
-
 
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-
 `DATABASE_URL`="postgresql://root:qwerty@localhost:5432/tutorialpostgresequelize"
+
 ## Acknowledgements
+
 raw query in sequelize
 
 const result = await sequelize.query(`INSERT INTO users (username,  password ,createdAt,updatedAt) VALUES (:username,  :password , :createdAt , :updatedAt) `, {
-  replacements: { username, password, createdAt: createddate, updatedAt: updateddate },
-  type: Sequelize.QueryTypes.INSERT,
+replacements: { username, password, createdAt: createddate, updatedAt: updateddate },
+type: Sequelize.QueryTypes.INSERT,
 });
+
+ผูก project เเล้ว push ขึ้นไปในกรณีที่ เผลอกดก่อนที่จะเอา code ใน repo มาวาง
+git remote add origin <URL ของ repository>
+git branch -M main # ตั้งชื่อ branch เป็น main (ถ้ายังไม่ได้ตั้ง)
+git config pull.rebase false  
+git push -u origin main
