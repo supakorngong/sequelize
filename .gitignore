@@ -1,3 +1,8 @@
+# ซ่อนไฟล์ .env
 .env
-./config/config.json
-./node_modules
+
+# ซ่อนไฟล์ config.json (ถ้ามีข้อมูลลับ)
+config/config.json
+
+# ซ่อนโฟลเดอร์ node_modules
+node_modules/
