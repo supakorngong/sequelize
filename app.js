@@ -33,4 +33,5 @@ app.delete("/user/:id", async (req, res) => {
 
 app.listen(3001, async () => {
   console.log("Server is running on port 3001");
+  console.log(" i am from dev branch");
 });
